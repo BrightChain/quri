@@ -6,7 +6,7 @@
     "types": []
   },
   "files": [
-    "src/main.ts",
+    "src/quri.ts",
     "src/polyfills.ts"
   ],
   "include": [
