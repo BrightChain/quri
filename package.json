@@ -4,9 +4,9 @@
   "description": "quri.social",
   "main": "public/quri-bundle.js",
   "scripts": {
-    "build": "webpack && cp ./node_modules/systemjs/dist/system.js ./public",
-    "build:debug": "webpack --mode=development && cp ./node_modules/systemjs/dist/system.js ./public",
-    "build:production": "webpack --mode=production && cp ./node_modules/systemjs/dist/system.js ./public",
+    "build": "ng build && webpack && cp ./node_modules/systemjs/dist/system.js ./public",
+    "build:debug": "ng build && webpack --mode=development && cp ./node_modules/systemjs/dist/system.js ./public",
+    "build:production": "ng build && webpack --mode=production && cp ./node_modules/systemjs/dist/system.js ./public",
     "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "ng": "ng",
     "start": "ng serve",
