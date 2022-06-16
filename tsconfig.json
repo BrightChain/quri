@@ -1,16 +1,32 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
     "noImplicitAny": false,
-    "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "removeComments": true,
     "sourceMap": true,
     "allowJs": true,
     "noEmit": false,
-    "target": "es6",
     "outDir": "build",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom"
+    ]
   },
   "typeRoots": [ "types" ],
   "typingOptions": {
@@ -25,5 +41,11 @@
   ],
   "files": [
     "src/quri.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }
