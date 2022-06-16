@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "noEmit": false,
+    "target": "es6",
+    "outDir": "build",
+    "skipLibCheck": true
+  },
+  "typeRoots": [ "types" ],
+  "typingOptions": {
+    "enableAutoDiscovery": true
+  },
+  "include": [
+    "src/quri.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build/**/*"
+  ],
+  "files": [
+    "src/quri.ts"
+  ]
+}
