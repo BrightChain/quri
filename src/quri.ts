@@ -4,6 +4,12 @@
 import { firebaseConfig } from './firebaseConfig';
 import { initializeApp, FirebaseApp } from 'firebase/app';
 import { IQuriApp } from './interfaces';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
 declare global {
   interface Window {
     quri: IQuriApp;
@@ -12,6 +18,7 @@ declare global {
     };
   }
 }
+
 const _quri: IQuriApp = {
   firebaseApp:
     window.firebase !== undefined &&
@@ -80,4 +87,13 @@ const _quri: IQuriApp = {
 window.quri = window.quri || _quri;
 
 document.addEventListener('DOMContentLoaded', window.quri.onLoad);
+
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err) => console.error(err));
+
 export default { quri: _quri };
