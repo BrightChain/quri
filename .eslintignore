@@ -6,3 +6,6 @@ public
 node_modules
 # firebaseJs functions is trash
 functions
+# bin/obj/etc
+bin
+obj

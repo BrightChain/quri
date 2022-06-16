@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
+      crossorigin="anonymous"
+    />
+    <title>Quri</title>
+
+    <!-- update the version number as needed -->
+    <script defer="" src="/__/firebase/9.8.3/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer="" src="/__/firebase/9.8.3/firebase-auth-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-database-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-firestore-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-functions-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-messaging-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-storage-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-analytics-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-remote-config-compat.js"></script>
+    <script defer="" src="/__/firebase/9.8.3/firebase-performance-compat.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer="" src="/__/firebase/init.js?useEmulator=false"></script>
+    <script src="https://kit.fontawesome.com/378a56a907.js" crossorigin="anonymous"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+    <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+  <body>
+    <app-root></app-root>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>qURI</h1>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>
