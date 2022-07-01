@@ -4,15 +4,16 @@
   "description": "quri.social",
   "main": "public/quri-bundle.js",
   "scripts": {
-    "build": "ng build --aot",
-    "build:debug": "ng build -c development",
-    "build:production": "ng build --aot",
-    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "ng": "ng",
     "start": "firebase serve",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build --aot",
+    "build:configs": "/bin/bash ./buildConfigs.sh",
+    "build:debug": "ng build -c development",
+    "build:production": "ng build --aot",
     "test": "ng test",
-    "build:configs": "/bin/bash ./buildConfigs.sh"
+    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
+    "e2e": "ng e2e",
+    "watch": "ng build --watch --configuration development"
   },
   "keywords": [],
   "author": "Digital Defiance and contributors",
@@ -49,7 +50,7 @@
   },
   "dependencies": {
     "@angular-devkit/build-angular": "^14.0.2",
-    "@angular/cli": "~14.0.2",
+    "@angular/cli": "~14.0.4",
     "@angular/compiler-cli": "^14.0.3",
     "@angular/fire": "^7.4.1",
     "@angular/material": "^14.0.3",
@@ -63,7 +64,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "material-icons": "^1.11.2",
+    "material-icons": "^1.11.3",
     "npm": "^8.13.1",
     "typescript": "~4.7.2"
   }
